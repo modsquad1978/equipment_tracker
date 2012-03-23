@@ -1,0 +1,110 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Equipment:</b>
+  <%= @equipment.equipment_id %>
+</p>
+
+<p>
+  <b>Model number:</b>
+  <%= @equipment.model_number %>
+</p>
+
+<p>
+  <b>Serial number:</b>
+  <%= @equipment.serial_number %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @equipment.location %>
+</p>
+
+<p>
+  <b>Equipment description:</b>
+  <%= @equipment.equipment_description %>
+</p>
+
+<p>
+  <b>Use:</b>
+  <%= @equipment.use %>
+</p>
+
+<p>
+  <b>Department:</b>
+  <%= @equipment.department %>
+</p>
+
+<p>
+  <b>Po number:</b>
+  <%= @equipment.po_number %>
+</p>
+
+<p>
+  <b>Pm required:</b>
+  <%= @equipment.pm_required %>
+</p>
+
+<p>
+  <b>Maintenance frequency:</b>
+  <%= @equipment.maintenance_frequency %>
+</p>
+
+<p>
+  <b>Maintenance sop:</b>
+  <%= @equipment.maintenance_sop %>
+</p>
+
+<p>
+  <b>Calibration required:</b>
+  <%= @equipment.calibration_required %>
+</p>
+
+<p>
+  <b>Calibration frequency:</b>
+  <%= @equipment.calibration_frequency %>
+</p>
+
+<p>
+  <b>Calibration date:</b>
+  <%= @equipment.calibration_date %>
+</p>
+
+<p>
+  <b>Calibration sticker:</b>
+  <%= @equipment.calibration_sticker %>
+</p>
+
+<p>
+  <b>Calibration database update:</b>
+  <%= @equipment.calibration_database_update %>
+</p>
+
+<p>
+  <b>Calibration specs:</b>
+  <%= @equipment.calibration_specs %>
+</p>
+
+<p>
+  <b>Validation required:</b>
+  <%= @equipment.validation_required %>
+</p>
+
+<p>
+  <b>Validation sop:</b>
+  <%= @equipment.validation_sop %>
+</p>
+
+<p>
+  <b>Validation document:</b>
+  <%= @equipment.validation_document %>
+</p>
+
+<p>
+  <b>Validation approval:</b>
+  <%= @equipment.validation_approval %>
+</p>
+
+
+<%= link_to 'Edit', edit_equipment_path(@equipment) %> |
+<%= link_to 'Back', equipment_index_path %>

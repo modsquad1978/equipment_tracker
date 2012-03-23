@@ -1,0 +1,101 @@
+<%= form_for(@equipment) do |f| %>
+  <% if @equipment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@equipment.errors.count, "error") %> prohibited this equipment from being saved:</h2>
+
+      <ul>
+      <% @equipment.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :equipment_id %><br />
+    <%= f.text_field :equipment_id %>
+  </div>
+  <div class="field">
+    <%= f.label :model_number %><br />
+    <%= f.text_field :model_number %>
+  </div>
+  <div class="field">
+    <%= f.label :serial_number %><br />
+    <%= f.text_field :serial_number %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :equipment_description %><br />
+    <%= f.text_area :equipment_description %>
+  </div>
+  <div class="field">
+    <%= f.label :use %><br />
+    <%= f.text_area :use %>
+  </div>
+  <div class="field">
+    <%= f.label :department %><br />
+    <%= f.text_field :department %>
+  </div>
+  <div class="field">
+    <%= f.label :po_number %><br />
+    <%= f.text_field :po_number %>
+  </div>
+  <div class="field">
+    <%= f.label :pm_required %><br />
+    <%= f.text_field :pm_required %>
+  </div>
+  <div class="field">
+    <%= f.label :maintenance_frequency %><br />
+    <%= f.text_field :maintenance_frequency %>
+  </div>
+  <div class="field">
+    <%= f.label :maintenance_sop %><br />
+    <%= f.text_field :maintenance_sop %>
+  </div>
+  <div class="field">
+    <%= f.label :calibration_required %><br />
+    <%= f.check_box :calibration_required %>
+  </div>
+  <div class="field">
+    <%= f.label :calibration_frequency %><br />
+    <%= f.text_field :calibration_frequency %>
+  </div>
+  <div class="field">
+    <%= f.label :calibration_date %><br />
+    <%= f.date_select :calibration_date %>
+  </div>
+  <div class="field">
+    <%= f.label :calibration_sticker %><br />
+    <%= f.check_box :calibration_sticker %>
+  </div>
+  <div class="field">
+    <%= f.label :calibration_database_update %><br />
+    <%= f.check_box :calibration_database_update %>
+  </div>
+  <div class="field">
+    <%= f.label :calibration_specs %><br />
+    <%= f.text_field :calibration_specs %>
+  </div>
+  <div class="field">
+    <%= f.label :validation_required %><br />
+    <%= f.check_box :validation_required %>
+  </div>
+  <div class="field">
+    <%= f.label :validation_sop %><br />
+    <%= f.text_field :validation_sop %>
+  </div>
+  <div class="field">
+    <%= f.label :validation_document %><br />
+    <%= f.text_field :validation_document %>
+  </div>
+  <div class="field">
+    <%= f.label :validation_approval %><br />
+    <%= f.text_field :validation_approval %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

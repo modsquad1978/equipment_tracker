@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  equipment_id: MyString
+  model_number: MyString
+  serial_number: MyString
+  location: MyString
+  equipment_description: MyText
+  use: MyText
+  department: MyString
+  po_number: MyString
+  pm_required: MyString
+  maintenance_frequency: MyString
+  maintenance_sop: MyString
+  calibration_required: false
+  calibration_frequency: MyString
+  calibration_date: 2012-03-23
+  calibration_sticker: false
+  calibration_database_update: false
+  calibration_specs: MyString
+  validation_required: false
+  validation_sop: MyString
+  validation_document: MyString
+  validation_approval: MyString
+
+two:
+  equipment_id: MyString
+  model_number: MyString
+  serial_number: MyString
+  location: MyString
+  equipment_description: MyText
+  use: MyText
+  department: MyString
+  po_number: MyString
+  pm_required: MyString
+  maintenance_frequency: MyString
+  maintenance_sop: MyString
+  calibration_required: false
+  calibration_frequency: MyString
+  calibration_date: 2012-03-23
+  calibration_sticker: false
+  calibration_database_update: false
+  calibration_specs: MyString
+  validation_required: false
+  validation_sop: MyString
+  validation_document: MyString
+  validation_approval: MyString
