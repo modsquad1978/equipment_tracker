@@ -1,5 +1,7 @@
 EquipmentTracker::Application.routes.draw do
   get "home/index"
+  get "equipment/new"
+
 
   resources :equipment
   

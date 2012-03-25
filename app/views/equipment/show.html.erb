@@ -104,6 +104,7 @@
   <b>Validation approval:</b>
   <%= @equipment.validation_approval %>
 </p>
+<%= image_tag @equipment.avatar.url %>
 
 
 <%= link_to 'Edit', edit_equipment_path(@equipment) %> |

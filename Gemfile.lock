@@ -32,6 +32,7 @@ GEM
     arel (3.0.2)
     builder (3.0.0)
     chunky_png (1.2.5)
+    cocaine (0.2.1)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -89,6 +90,11 @@ GEM
       net-ssh (>= 1.99.1)
     net-ssh (2.3.0)
     nokogiri (1.5.2)
+    paperclip (2.7.0)
+      activerecord (>= 2.3.0)
+      activesupport (>= 2.3.2)
+      cocaine (>= 0.0.2)
+      mime-types
     passenger (3.0.11)
       daemon_controller (>= 0.2.5)
       fastthread (>= 1.0.1)
@@ -180,6 +186,7 @@ DEPENDENCIES
   fog
   gravatar_image_tag (= 1.0.0.pre2)
   jquery-rails
+  paperclip (~> 2.7)
   passenger
   pg
   rails (= 3.2.2)

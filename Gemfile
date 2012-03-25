@@ -15,6 +15,7 @@ gem 'activesupport'
 gem 'fastthread'
 gem 'passenger'
 gem 'fog'
+gem 'paperclip', '~> 2.7'
 
 group :production, :staging do
 	gem 'pg'
