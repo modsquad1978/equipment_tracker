@@ -104,8 +104,9 @@
   <b>Validation approval:</b>
   <%= @equipment.validation_approval %>
 </p>
-<%= image_tag @equipment.avatar.url %>
 
-
+<p>
+<%= link_to "Calibration Certificate", @equipment.avatar.url(:original, false) %>
+</p>
 <%= link_to 'Edit', edit_equipment_path(@equipment) %> |
 <%= link_to 'Back', equipment_index_path %>
