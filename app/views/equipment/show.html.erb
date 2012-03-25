@@ -108,5 +108,9 @@
 <p>
 <%= link_to "Calibration Certificate", @equipment.avatar.url(:original, false) %>
 </p>
+
+<p>
+<%= link_to "Procedure (SOP)", @equipment.sop.url(:original, false) %>
+</p>
 <%= link_to 'Edit', edit_equipment_path(@equipment) %> |
 <%= link_to 'Back', equipment_index_path %>
